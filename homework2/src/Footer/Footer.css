@@ -1,0 +1,19 @@
+.Footer {
+    padding: 40px;
+    margin-top: 200px;
+    background-color: rgba(128, 128, 128, 0.51);
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ol{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.Footer span{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}

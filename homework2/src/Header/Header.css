@@ -1,0 +1,18 @@
+ .Container {
+     background-color: rgba(128, 128, 128, 0.51);
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     font-size: 14px;
+}
+ .Container span{
+     margin: 40px;
+ }
+
+ ul{
+     list-style: none;
+     display: flex;
+ }
+ li{
+     margin:0 40px 10px 0;
+ }

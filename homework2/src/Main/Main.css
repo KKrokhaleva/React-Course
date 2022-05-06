@@ -1,0 +1,14 @@
+ .Main{
+     margin:40px;
+}
+ h1 {
+     font-family: 'Roboto', sans-serif;
+     margin: 40px 0;
+     font-weight: normal;
+    font-size: 3em;
+ }
+ p{
+     max-width: 970px;
+     font-size: 14px;
+ }
+
