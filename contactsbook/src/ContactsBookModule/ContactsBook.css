@@ -7,10 +7,12 @@
 .header-title h1{
     margin: 0;
     padding: 0;
+    cursor: default;
 }
 .header-title p{
     margin: 0;
     padding: 0;
+    cursor: default;
 }
 .header-link{
     color: black;

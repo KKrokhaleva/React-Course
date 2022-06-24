@@ -42,14 +42,17 @@ export function ModalWindow({editableContact, onEditComplete,closeContact}) {
         setSaveIndicator('unsaved');
     }
     return (
-        <div className={'modal'}>
+        <div className='modal'>
             <div className="modal-content">
+
                 <div className="popup">
-                    <p className={'popup-title'}>Edit Contact: <strong>{editableContact.name} {editableContact.secondName}</strong></p>
-                    <button className={'popup-button'} onClick={closeContact}>X</button>
+                    <p className='popup-title'>Edit Contact: <strong>{editableContact.name} {editableContact.secondName}</strong></p>
+                    <button className='popup-button' onClick={closeContact}>X</button>
                 </div>
-                <div className={'popup-body'}>
+
+                <div className='popup-body'>
                     <span className="popup-img"/>
+
                     <div className="popup-name">
                         <span>first Name</span>
                         <input type="text" value={name} onChange={({target}) => onChangeFieldsHandler('firstName', target.value)}/>
@@ -58,8 +61,9 @@ export function ModalWindow({editableContact, onEditComplete,closeContact}) {
                         <span>Phone Number</span>
                         <input type="tel" value={phoneNumber} onChange={({target}) => onChangeFieldsHandler('phoneNumber',target.value)}/>
                     </div>
+
                 </div>
-                <button className={'button-save'} onClick={onSave}>Save</button>
+                <button className='button-save' onClick={onSave}>Save</button>
             </div>
 
         </div>

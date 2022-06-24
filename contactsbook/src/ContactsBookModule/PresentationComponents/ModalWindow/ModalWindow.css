@@ -10,13 +10,9 @@
     justify-content: center;
     transform: scale(1);
 }
-/*.modal.active{*/
-/*    transform: scale(1);*/
-/*}*/
 .modal-content{
     background: #EFEFEF;;
 }
-
 .popup{
    display: flex;
     justify-content: space-between;
@@ -31,6 +27,7 @@
     margin-right: 10px;
     border: none;
     background-color: #B7B7B7;
+    cursor: pointer;
 }
 .popup-body {
     display: flex;
@@ -70,4 +67,5 @@
     font-size: 12px;
     line-height: 15px;
     color: white;
+    cursor: pointer;
 }

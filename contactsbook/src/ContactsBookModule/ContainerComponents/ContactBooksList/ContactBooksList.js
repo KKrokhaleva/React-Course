@@ -3,7 +3,7 @@ import {ContactBookItem} from "../../PresentationComponents/ContactBookItem/Cont
 
 export default function ContactsBookList({contacts,onContactEdit,onContactDelete}) {
     return (
-        <ul className={'contact-list'}>
+        <ul className='contact-list'>
             {contacts.map((contact) =>
                 <ContactBookItem
                     contact={contact}
@@ -13,5 +13,5 @@ export default function ContactsBookList({contacts,onContactEdit,onContactDelete
                 />
             )}
         </ul>
-    )
+    );
 }
