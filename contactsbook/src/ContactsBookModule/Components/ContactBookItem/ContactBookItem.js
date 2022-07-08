@@ -5,7 +5,7 @@ import removeButton from './img/removeButton.svg';
 export  function ContactBookItem({contact,onContactEdit, onContactDelete}) {
 
     return (
-        <li className="cb-item" >
+        <li className="cb-item"  >
             <div className="cb-image"/>
             <div className="cb-wrapper">
                 <span  id='cb-tittle'>{contact.name}   {contact.secondName} </span>

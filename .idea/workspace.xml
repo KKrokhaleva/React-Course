@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af9da666-9a3b-4df2-8aa7-18cc0c2e1df3" name="Changes" comment="added homework3" />
+    <list default="true" id="af9da666-9a3b-4df2-8aa7-18cc0c2e1df3" name="Changes" comment=" fixed ClassName, filter, some styles">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +45,19 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/contactsbook/src/App.test.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/contactsbook/src/App.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/contactsbook/src/ContactsBookModule/PresentationComponents/ContactBookItem/ContactBookItem.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/homework3/src/App.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/contactsbook/src/ContactsBookModule/ContactsBook.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/contactsbook/src/ContactsBookModule/PresentationComponents/ModalWindow/ModalWindow.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/contactsbook/src/ContactsBookModule/ContainerComponents/ContactsBookSearch/ContactsBookSearch.js" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="28o0m69yieQYdlpKRbENcDGSLT0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -54,7 +69,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../React_hw6-main" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -72,7 +87,14 @@
       <updated>1651867788074</updated>
       <workItem from="1651867789438" duration="719000" />
       <workItem from="1651868722520" duration="1163000" />
-      <workItem from="1651873195515" duration="285000" />
+      <workItem from="1651873195515" duration="2841000" />
+      <workItem from="1652084419449" duration="28000" />
+      <workItem from="1652380273010" duration="1073000" />
+      <workItem from="1652466220088" duration="3782000" />
+      <workItem from="1653074858863" duration="309000" />
+      <workItem from="1653078497345" duration="270000" />
+      <workItem from="1654182938205" duration="593000" />
+      <workItem from="1656015061983" duration="21553000" />
     </task>
     <task id="LOCAL-00001" summary="added homework3">
       <created>1651869066152</created>
@@ -95,7 +117,42 @@
       <option name="project" value="LOCAL" />
       <updated>1651869644787</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added homework3">
+      <created>1651873524079</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1651873524079</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added homework2">
+      <created>1651874851358</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1651874851358</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added gitignore">
+      <created>1651875693301</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1651875693301</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added Home Work 5">
+      <created>1656015205911</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1656015205911</updated>
+    </task>
+    <task id="LOCAL-00008" summary=" fixed ClassName, filter, some styles">
+      <created>1656098882788</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1656098882788</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +171,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added homework3" />
-    <option name="LAST_COMMIT_MESSAGE" value="added homework3" />
+    <MESSAGE value="added homework2" />
+    <MESSAGE value="added gitignore" />
+    <MESSAGE value="Added Home Work 5" />
+    <MESSAGE value=" fixed ClassName, filter, some styles" />
+    <option name="LAST_COMMIT_MESSAGE" value=" fixed ClassName, filter, some styles" />
   </component>
 </project>

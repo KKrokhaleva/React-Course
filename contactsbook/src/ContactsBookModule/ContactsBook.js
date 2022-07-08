@@ -1,50 +1,46 @@
 import './ContactsBook.css'
-import {useMemo, useState} from "react";
-import ContactsBookList from "./ContainerComponents/ContactBooksList/ContactBooksList";
-import ContactsBookSearch from "./ContainerComponents/ContactsBookSearch/ContactsBookSearch";
-import {ModalWindow} from "./PresentationComponents/ModalWindow/ModalWindow";
+import {useMemo, useReducer} from "react";
+import ContactsBookList from "./Components/ContactBookList/ContactBooksList";
+import ContactsBookSearch from "./Components/ContactsBookSearch/ContactsBookSearch";
+import {ModalWindow} from "./Components/ModalWindow/ModalWindow";
+import reducer, {EDIT_CONTACT, REMOVE, SEARCH_TEXT, SELECTED_CONTACT_ID,INITIAL_DATA} from '../reducer';
 
-const INITIAL_DATA =  [
-    {id: 1, name: "Andres ", secondName:"Garcia",  phoneNumber:"+ 38 (012) 345 67 89"},
-    {id: 2, name: "Anna ",secondName:"Delvey", phoneNumber:"+ 38 (012) 345 67 89"},
-    {id: 8, name: "Anna ",secondName:"Sorokina", phoneNumber:"+ 38 (012) 345 67 89"},
-    {id: 4, name: "Bob ",secondName:"Garisson", phoneNumber:"+ 38 (012) 345 67 89"},
-    {id: 5, name: "Jane ",secondName:"Doe", phoneNumber:"+ 38 (012) 345 67 89"},
-    {id: 6, name: "John  ",secondName:"Doe", phoneNumber:"+ 38 (012) 462 67 83"},
-    {id: 7, name: "Robert ",secondName:"Person", phoneNumber:"+ 38 (012) 422 57 83"},
-];
+
+
 
 export function ContactsBook() {
-
-    const [contacts, setContacts] = useState(INITIAL_DATA)
-    const [selectedContactId, setSelectedContactId] = useState(null);
-    const [search,setSearch] = useState('');
+    const [state,dispatch] = useReducer(reducer, INITIAL_DATA);
 
     const searchedContacts =  useMemo(() => {
-            return contacts.filter(contact => contact.name.toLowerCase().includes(search.toLowerCase())
-            || contact.secondName.toLowerCase().includes(search.toLowerCase())
-            || contact.phoneNumber.toLowerCase().includes(search.toLowerCase()));
-            }, [search,contacts]
+            return state.contacts.filter(contact => contact.name.toLowerCase().includes(state.search.toLowerCase())
+            || contact.secondName.toLowerCase().includes(state.search.toLowerCase())
+            || contact.phoneNumber.toLowerCase().includes(state.search.toLowerCase()));
+            }, [state.search,state.contacts]
     );
 
     const selectedContact =  useMemo(() =>{
-        return searchedContacts.find(contact => contact.id===selectedContactId);
-    }, [selectedContactId,searchedContacts]
-    );
+        return searchedContacts.find(contact => contact.id===state.selectedContactId);
+    }, [state.selectedContactId,searchedContacts]);
 
     const closeContact = () => {
-       setSelectedContactId (null);
+       dispatch({
+           type: SELECTED_CONTACT_ID,
+           payload: null
+       })
     }
 
     const removeContact = (contact)=> {
-        setContacts (contacts.filter(c=> c.id!==contact.id))
+        dispatch({
+            type: REMOVE,
+            payload: contact.id
+        })
     }
 
     const onEditComplete = (changedContact)=> {
-        const newContacts = contacts.slice();
-        const contactIndex = newContacts.findIndex(contact => contact.id ===changedContact.id);
-        newContacts.splice(contactIndex,1, changedContact);
-        setContacts(newContacts);
+        dispatch({
+            type: EDIT_CONTACT,
+            payload: changedContact
+        })
     }
 
     return (
@@ -59,17 +55,27 @@ export function ContactsBook() {
 
                 <ContactsBookSearch
                     placeholder= "Search"
-                    value = {search}
-                    onChange={e =>setSearch(e.target.value)}
+                    value = {state.search}
+                    onChange={e => {
+                        dispatch({
+                        type: SEARCH_TEXT,
+                        payload: e.target.value
+                    })
+                    }}
                 />
 
                 <ContactsBookList
                     contacts={searchedContacts}
-                    onContactEdit={setSelectedContactId}
+                    onContactEdit={(id)=>{
+                        dispatch({
+                            type: SELECTED_CONTACT_ID,
+                            payload: id
+                        })
+                    }}
                     onContactDelete={removeContact}
                 />
 
-                { ( typeof selectedContactId ==='number')
+                { ( typeof state.selectedContactId ==='number')
                     ? <ModalWindow closeContact={closeContact} editableContact={selectedContact} onEditComplete={onEditComplete}/>
                     : <></>
                 }
