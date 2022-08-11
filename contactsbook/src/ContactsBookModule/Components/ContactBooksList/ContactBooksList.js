@@ -1,4 +1,4 @@
-import {ContactBookItem} from "../../PresentationComponents/ContactBookItem/ContactBookItem";
+import {ContactBookItem} from "../ContactBookItem/ContactBookItem";
 
 
 export default function ContactsBookList({contacts,onContactEdit,onContactDelete}) {

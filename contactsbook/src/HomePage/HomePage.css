@@ -1,0 +1,35 @@
+.home-container{
+    background-color: rgba(154, 154, 154, 0.24);
+    height: 100vh;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin: 0;
+    cursor: default;
+    font-size: 72px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    cursor: default;
+}
+h3{
+   padding-left: 35%;
+}
+.contact-book, .todo-app {
+    background-color: rgba(154, 154, 154, 0.34);
+    margin-top: 100px;
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #9A9A9A;
+    border-radius: 13px;
+    box-shadow: 0 4px 10px 3px #165082;
+}
+
+.contact-book:hover, .todo-app:hover {
+    transform: scale(1.2);
+
+}

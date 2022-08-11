@@ -1,0 +1,12 @@
+.head-page{
+    display: flex;
+}
+ .LeftSidebar{
+      display: grid;
+     grid-template-rows: 150px 507px 100px;
+      width: 420px;
+     background-color: #C4C4C4;
+  }
+ .ns{
+     cursor: default;
+ }

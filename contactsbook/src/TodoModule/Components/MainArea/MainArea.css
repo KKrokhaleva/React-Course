@@ -1,0 +1,78 @@
+.MainArea {
+    display: grid;
+}
+
+.description-wrapper {
+    display: grid;
+}
+.main-area-header{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 44px;
+    color: black;
+    margin: 40px 0 30px 40px;
+    cursor: default;
+}
+.main-area-description{
+    width: 950px;
+    margin: 0 40px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    height: 154px;
+    padding: 15px 11px;
+    font-size: 16px;
+    line-height: 19px;
+}
+.button-save{
+    width: 164px;
+    background: #6DBE75;
+    border-radius: 10px;
+    border: 1px solid #6DBE75;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 10px 62px;
+    cursor: pointer;
+    color: white;
+    align-self: center;
+    align-items: flex-end;
+    margin-left: 850px;
+}
+.history{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 173px 0 10px 40px;
+    cursor: default;
+}
+.history-wrapper{
+    display: flex;
+    margin: 0 40px;
+    justify-content: space-between;
+    border-top: 1px solid #000000;;
+}
+.history-name{
+    font-size: 14px;
+    line-height: 17px;
+}
+.history-date{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+.history-list{
+    margin: 0;
+    padding:  0;
+}
+
+.history-wrapper{
+    display: flex;
+    padding: 5px 0;
+}
+.ns {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 44px;
+    color: #BBBBBB;
+    margin: 269px 24%;
+}

@@ -1,0 +1,20 @@
+.TodoForm{
+
+}
+.TodoFormHeader{
+    padding: 20px 0 20px 20px;
+    margin: 0;
+    border-bottom: 2px solid #9A9A9A;
+    cursor: default;
+}
+.TodoFormInput{
+    width: 87%;
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF ;
+    border-radius: 15px;
+    margin: 20px 14.5px;
+    font-size: 12px;
+    line-height: 26px;
+    padding-left: 20px;
+    align-items: center;
+}

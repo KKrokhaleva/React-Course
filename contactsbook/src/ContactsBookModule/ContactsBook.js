@@ -1,8 +1,8 @@
 import './ContactsBook.css'
 import {useMemo, useReducer} from "react";
-import ContactsBookList from "./ContainerComponents/ContactBooksList/ContactBooksList";
-import ContactsBookSearch from "./ContainerComponents/ContactsBookSearch/ContactsBookSearch";
-import {ModalWindow} from "./PresentationComponents/ModalWindow/ModalWindow";
+import ContactsBookList from "./Components/ContactBooksList/ContactBooksList";
+import ContactsBookSearch from "./Components/ContactsBookSearch/ContactsBookSearch";
+import {ModalWindow} from "./Components/ModalWindow/ModalWindow";
 import {reducer} from "../reducer";
 
 const INITIAL_DATA =  {

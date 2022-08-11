@@ -1,0 +1,45 @@
+.todo-item {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    align-items: center;
+    background-color: #DFDFDF;
+    border-radius: 10px;
+}
+.todo-item-complete{
+    margin-left: 16px;
+    width: 28px;
+    height: 28px;
+    border-radius: 30px;
+    background-color: #C4C4C4;
+    text-align: center;
+    line-height: 1.8;
+    cursor: pointer;
+}
+.todo-item-wrapper{
+    display: grid;
+    margin-left: 21px;
+    width: 75%;
+}
+#item-tittle{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin: 8px 0 6px 0;
+}
+#item-description{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #868383;
+    margin-bottom: 9px;
+}
+.completed {
+    text-decoration: line-through;
+}
+.delete{
+    cursor: pointer;
+}
