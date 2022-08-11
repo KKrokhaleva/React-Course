@@ -21,7 +21,9 @@ export function ModalWindow({editableContact, onEditComplete, closeContact}) {
             case'phoneNumber': {
                 return {...state, phoneNumber: action.payload, saveIndicator: 'unsaved'}
             }
+            default: return state
         }
+
     }
 
     const [state, dispatch] = useReducer(reducer, initialFunction);
